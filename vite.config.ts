@@ -8,8 +8,20 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
+    sourcemap: true,
+    manifest: true,
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
   },
   optimizeDeps: {
+    include: ['react', 'react-dom'],
     exclude: ['lucide-react'],
+  },
+  server: {
+    port: 3000,
+    open: true,
   },
 });
