@@ -3,6 +3,7 @@ import { Award, Trophy, Star } from 'lucide-react';
 
 export const Achievements: React.FC = () => {
   const achievements = [
+    
   ];
 
   const currentStatus = [

@@ -1,14 +1,12 @@
-import React from 'react';
+import type { FC } from 'react';
 import avatar from './assets/avt.jpg';
 import { ProfileCard } from './components/ProfileCard';
 import { InfoCard } from './components/InfoCard';
 import { TechnicalSkills } from './components/TechnicalSkills';
-import { SocialCard } from './components/SocialCard';
 import { Categories } from './components/Categories';
 import { Achievements } from './components/Achievements';
 import { Labs } from './components/Labs';
-
-function App() {
+const App: FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
       {/* Animated background elements */}
@@ -34,14 +32,7 @@ function App() {
           {/* Middle Column - Technical Skills & Social */}
           <div className="lg:col-span-2 space-y-6">
             <TechnicalSkills />
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <SocialCard />
-              </div>
-              <div>
-                <Categories />
-              </div>
-            </div>
+            <Categories />
           </div>
 
           {/* Right Column - Achievements */}
