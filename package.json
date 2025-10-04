@@ -1,7 +1,6 @@
 {
   "name": "vite-react-typescript-starter",
   "private": true,
-  // "homepage": "https://web-jet-six-97.vercel.app/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
