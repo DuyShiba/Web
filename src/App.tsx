@@ -4,7 +4,6 @@ import { ProfileCard } from './components/ProfileCard';
 import { InfoCard } from './components/InfoCard';
 import { TechnicalSkills } from './components/TechnicalSkills';
 import { Categories } from './components/Categories';
-import { Achievements } from './components/Achievements';
 import { Labs } from './components/Labs';
 const App: FC = () => {
   return (
@@ -30,14 +29,9 @@ const App: FC = () => {
           </div>
 
           {/* Middle Column - Technical Skills & Social */}
-          <div className="lg:col-span-2 space-y-6">
+          <div className="lg:col-span-3 space-y-6">
             <TechnicalSkills />
             <Categories />
-          </div>
-
-          {/* Right Column - Achievements */}
-          <div className="lg:col-span-1">
-            <Achievements />
           </div>
         </div>
 
