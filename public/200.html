@@ -1,10 +1,8 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/anhlinh.github.io/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Developer Portfolio Website</title>
+    <meta charset="utf-8">
+    <title>Portfolio Website</title>
     <script type="text/javascript">
       // Single Page Apps for GitHub Pages
       // MIT License
@@ -23,6 +21,11 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Redirect to main page if accessing directly
+      if (!window.location.pathname.includes('/anhlinh.github.io/')) {
+        window.location.href = '/anhlinh.github.io/';
+      }
+    </script>
   </body>
 </html>
